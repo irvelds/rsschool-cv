@@ -7,6 +7,7 @@ Irina Goncharova
 **E-mail:** irvelds@mail.ru
 
 **Rs-school:** irvelds (@irvelds)
+
 **GitHub:** [irvelds](https://github.com/irvelds)
 * * *
 
@@ -67,6 +68,7 @@ I am currently working in a team on two large angular projects.
 But since these projects are private, I can't link to them.
 
 
+[Ссылка на мой проект CV#1](https://irvelds.github.io/rsschool-cv/cv)
 
 
 ### Languages:
