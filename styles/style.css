@@ -376,7 +376,7 @@ html {
   
     .menu-list {
       display: block;
-      overflow: auto;
+      overflow: hidden;
     }
   
     .menu-item {
