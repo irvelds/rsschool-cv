@@ -1,14 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV2. HTML, CSS and Git Basics</title>
-    <meta name="description" content="My CV">
-    <meta name="author" content="Irvelds">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Irevelds CV3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css" />
 </head>
+
 <body>
+    <header>
+        <nav class="menu">
+            <ul class="menu-list">
+                <li class="menu-item"><a href="#about">About me</a></li>
+                <li class="menu-item"><a href="#contact">Contact</a></li>
+                <li class="menu-item"><a href="#skills">Skills</a></li>
+                <li class="menu-item"><a href="#code">Code</a></li>
+                <li class="menu-item"><a href="#projects">Projects</a></li>
+                <li class="menu-item"><a href="#education">Education</a></li>
+                <li class="menu-item"><a href="#languages">Languages</a></li>
+            </ul>
+        </nav>
+        <svg  class="menu-btn"  viewBox="0 0 800 600">
+            <path class="top-bar" d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200"
+                />
+            <path class="middle-bar" d="M300,320 L540,320" />
+            <path class="bottom-bar" d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190"
+                 transform="translate(480, 320) scale(1, -1) translate(-480, -318)" />
+        </svg>
+    </header>
+
+    <main class="container">
+        <div class="left-side">
+            <div class="main-title">
+                <figure>
+                    <img src="img/avatar.png" width="182" height="170"  alt="Avatar of Irvelds" />
+                </figure>
+                <h1>Irina <br />Goncharova</h1>
+                <p>Front-End developer</p>
+            </div>
+            <section class="contact" id="contact">
+                <h2 class="section-title">Contact</h2>
+                <ul class="contact-list">
+                    <li>
+                        <a href="https://github.com/irvelds" target="_blank">github.com/irvelds</a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/Irvelds" target="_blank">t.me/Irvelds</a>
+                    </li>
+                    <li>
+                        <a href="mailto:irvelds@mail.ru">irvelds@mail.ru</a>
+                    </li>
+                    <li>
+                        <p class="contact__paragraph">Ramenskoye, Russia</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div class="right-side">
+            <div class="main-title-mob">
+                <figure>
+                    <img src="img/avatar.png" width="182" height="170"  alt="Avatar of Irvelds" />
+                </figure>
+                <h1>Irina <br />Goncharova</h1>
+                <p>Front-End developer</p>
+            </div>
+            <section class="about" id="about">
+                <h2 class="section-title">About me</h2>
+                <p>For a long time I have been developing the user interface of an application based on Windows
+                    Presentation
+                    Foundation (WPF) technology.<br>
+                    I also developed and maintained corporate websites and online stores on Wordpress.<br>
+                    At the moment, my work requires perfect knowledge of the JavaScript language, so I chose the
+                    rs-school, which
+                    provides quality, modern education</p>
+            </section>
+            <section class="skills" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <ul class="skills-list">
+                    <li>HTML5, CSS3, LESS, SASS/SCSS</li>
+                    <li>JavaScript Basics</li>
+                    <li>Angular</li>
+                    <li>Git/GitHub, Team</li>
+                    <li>VisualStudio, VS Code</li>
+                    <li>XAML</li>
+                    <li>PHP</li>
+                    <li>WORDPRESS</li>
+                    <li>MySQL</li>
+                    <li>Adobe Photoshop, Illustrator, Corel, Premier</li>
+                </ul>
+            </section>
+
+            <section class="code" id="code">
+                <h2 class="section-title">Code example</h2>
+                <p><em>Codewars Tasks: The main idea is to count all the occurring characters in a string.
+                        If you have a string like aba, then the result should be {'a': 2, 'b': 1}. What if the string is
+                        empty? Then the result should be empty object literal, {}.</em>
+                </p>
+                <div>
+                    <pre>
+<code data-language="javascript">
+    function count(string) {
+        return string.split('').reduce((obj, el) => {
+          obj[el] = (obj[el] || 0) + 1;
+          return obj;
+        },{});
+      }
+</code>
+</pre>
+                </div>
+            </section>
+            <section class="projects" id="projects">
+                <h2 class="section-title">My projects</h2>
+                <p>I am currently working in a team on two large angular projects.
+                    But since these projects are private, I can't link to them.
+                </p>
+                <p>
+                    Here is a link to my project CV#1 <a href="https://irvelds.github.io/rsschool-cv/cv">https://irvelds.github.io/rsschool-cv/cv</a></p>
+            </section>
+            <section class="education" id="education">
+                <h2 class="section-title">Education</h2>
+                <ul class="education-list">
+                    <li>
+                        Moscow Polytechnic University
+                    </li>
+                    <li>
+                        The last courses I took:<br>
+                        <a href="https://www.udemy.com/course/fundamental-javascript/">Fundamental JavaScript. With
+                            practice and
+                            projects</a><br>
+                        <a href="https://www.udemy.com/course/angular-complete-guide/">Angular 9. Theory and Practice
+                            2020</a><br>
+                        <a href="https://www.udemy.com/course/typescript-bootcamp/">TypeScript</a><br>
+                        <a href="https://www.udemy.com/course/javascript_practice/">Practical JavaScript (Advanced)(in
+                            progress)</a><br>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="languages" id="languages">
+                <h2 class="section-title">Languages</h2>
+                <p>English level - A2</p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <span class="footer-github">
+            <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true">
+                <path fill-rule="evenodd" fill="#ffffff"
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+                </path>
+            </svg>
+            <a href="https://github.com/irvelds" target="_blank">
+                My GitHub
+            </a>
+        </span>
+        <p class="footer-year">- © 2022 by Irina Goncharova -</p>
+        <a class="footer-rsschool" href="https://rs.school/js/" target="_blank">
+            <img src="img/rs_school_js.svg" width="86" height="32" alt="RS School" />
+        </a>
+    </footer>
+    <script src="scripts/scripts.js"></script>
 </body>
+
 </html>
